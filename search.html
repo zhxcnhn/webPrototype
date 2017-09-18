@@ -8,7 +8,7 @@
     <meta name="author" content="">
   
 
-    <title>Contact us </title>
+    <title>Search</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
@@ -18,9 +18,12 @@
     <link href="css/main.css" rel="stylesheet">
     <link href="css/button.css" rel="stylesheet">
     <link rel="stylesheet" href="css/set_4.css">
-
-    <link rel="stylesheet" href="css/animate.css">
+    
+	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/select.css">
+
+	<link rel="stylesheet" href="css/searchStyle.css">
 
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="js/hover.zoom.js"></script>
@@ -56,52 +59,57 @@
             <li><a href="contact.html">Contact</a></li>
             <li><div class="set_4_button2 raised hoverable">
 		  <div class="anim"></div>
-		  <a href="login.html">Login</a> </div>
+		  <span><a href="login.html">Login</a>
+		  </span> </div>
 		</li>
           </ul>
         </div><!--/.nav-collapse -->
 
       </div>
     </div>
-	
-	
-	<!-- +++++ Contact Section +++++ -->
+    
+
+
+<!-- +++++ search Section +++++ -->
 	
 	<div class="container pt">
 		<div class="row mt">
 			<div class="col-lg-6 col-lg-offset-3 centered">
-				<h3>CONTACT US</h3>
+				<h3>Search</h3>
 				<hr>
-				<p>Just contact us.</p>
 			</div>
 		</div>
 		<div class="row mt">	
 			<div class="col-lg-8 col-lg-offset-2">
 				<form role="form">
 				  <div class="form-group">
-				    <input type="name" class="form-control" id="NameInputEmail1" placeholder="Your Name"/>
+				    <input type="name" class="form-control" id="NameInputEmail1" placeholder="What kind of skills are you seeking?"/>
 				    <br>
 				  </div>
-				  <div class="form-group">
-				    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-				    <br>
+				  <div class="forin-group" style="background: white;">
+					<select name="skills" id="parent">
+						<option value="non" selected="non" >More specific</option>
+    					<option value="Python">Python</option>
+    					<option value="Java">Java</option>
+    					<option value="C#">C#</option>
+    					<option value="C++">C++</option>
+    					<option value="Ruby">Ruby</option>
+    					<option value="SQL">SQL</option>
+					</select>
+					<br>
 				  </div>
-				  <div class="form-group">
-				    <input type="email" class="form-control" id="subjectEmail1" placeholder="Subject">
-				    <br>
-				  </div>
-				  <textarea class="form-control" rows="6" placeholder="Enter your text here"></textarea>
 				    <br>
 				    <div style="text-align: center;">
-				    	<input type="submit" value="SUBMIT" class="btn btn-primary">
+				    	<input type="submit" value="SEARCH" class="btn btn-primary" style="width: 100%">
 				    </div>
+				  
 				</form>    			
 			</div>
 		</div><!-- /row -->
 	</div><!-- /container -->
-	
-	
-	<!-- +++++ Footer Section +++++ -->
+
+
+<!-- +++++ Footer Section +++++ -->
 	
 	<div id="footer">
 		<div class="container">
